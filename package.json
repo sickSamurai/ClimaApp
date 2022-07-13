@@ -1,20 +1,20 @@
 {
-   "name": "ClimaApp",
-   "version": "1.0.0",
-   "description": "",
-   "main": "index.js",
-   "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node index.js"
-   },
-   "keywords": [],
-   "author": "",
-   "license": "ISC",
-   "dependencies": {
-      "axios": "^0.24.0",
-      "colors": "^1.4.0",
-      "dotenv": "^16.0.0",
-      "inquirer": "^8.2.0",
-      "yargs": "^17.3.1"
-   }
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Aplicación de consola para encontrar la información climatica de un lugar en el mundo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.0",
+    "inquirer": "^8.2.0",
+    "yargs": "^17.3.1"
+  }
 }

@@ -1,4 +1,4 @@
-const axios = require("axios").default
+const axios = require('axios').default
 
 class Searcher {
    constructor() {}
@@ -6,8 +6,8 @@ class Searcher {
    get mapboxParams() {
       return {
          access_token: process.env.MAPBOX_KEY,
-         limit: "5",
-         lenguaje: "es"
+         limit: '5',
+         lenguaje: 'es'
       }
    }
 
@@ -19,8 +19,8 @@ class Searcher {
                appid: process.env.OPENWEATHER_KEY,
                lat: place.lat,
                lon: place.lng,
-               lang: "es",
-               units: "metric"
+               lang: 'es',
+               units: 'metric'
             }
          })
 
@@ -37,7 +37,7 @@ class Searcher {
       }
    }
 
-   async getCities(placeName = "") {
+   async getCities(placeName = '') {
       try {
          const instance = axios.create({
             baseURL: `https://api.mapbox.com/geocoding/v5/mapbox.places/${placeName}.json`,
@@ -55,9 +55,6 @@ class Searcher {
       } catch (e) {
          console.log(e)
       }
-
-      //get cities with get http request
-      //return cities
    }
 }
 
